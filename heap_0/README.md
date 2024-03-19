@@ -2,7 +2,7 @@ Sovled by entering a long string.  Need to overflow the buffer.
 
 Each string has an pointer address that is next to each other thanks to the malloc.  Malloc appears to five 32 bytes as shown by entering the string below.
 
-
+```
 Enter your choice: 2
 Data for buffer: 1234567890123456789012345678901234567890
 
@@ -29,19 +29,22 @@ Heap State:
 5. Exit
 
 Enter your choice: 
-
+```
 
 There is no write check when writting the data to the buffer:
 
+```c
 void write_buffer()
 {
     printf("Data for buffer: ");
     fflush(stdout);
     scanf("%s", input_data);
 }
+```
 
 If the safe_var is not "bico" then it will print the flag:
 
+```c
 void check_win()
 {
     if (strcmp(safe_var, "bico") != 0)
@@ -64,4 +67,4 @@ void check_win()
         fflush(stdout);
     }
 }
-
+```

@@ -2,6 +2,7 @@ Opening the file in Windows with at PDF extension gives the last part of the fla
 
 There is a PNG at the start of the PDF file.  I found it by trying to extract all the text from the PDF:
 
+```
 s -sDEVICE=txtwrite -o output.txt flag2of2-final.pdf
 
 GPL Ghostscript 10.02.1 (2023-11-01)
@@ -28,6 +29,6 @@ The following warnings were encountered at least once while processing this file
    **** specification.
 
 Error: finalizing subclassing device while child refcount > 1
-               
-You can use a hex editor to extract the PNG and get the start of the key:
-https://hexed.it/
+```
+
+You can use a hex editor, like [hexed](https://hexed.it/) to extract the PNG and get the start of the key.
