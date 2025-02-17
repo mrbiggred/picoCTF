@@ -1,4 +1,4 @@
-Watch me fail to solve this issue on [here]().  I have figured out that I need to use a `%n` `printf` exploit to overwrite a function pointer to print out the flag.  I think I need use the payload in the `printf(buf)` call to overwrite the call to the `puts(normal_string)`.
+Watch me fail to solve this issue on [here](https://youtu.be/AT8w2fsgzsA).  I have figured out that I need to use a `%n` `printf` exploit to overwrite a function pointer to print out the flag.  I think I need use the payload in the `printf(buf)` call to overwrite the call to the `puts(normal_string)`.
 
 ```c
 	fgets(buf, 1024, stdin);
