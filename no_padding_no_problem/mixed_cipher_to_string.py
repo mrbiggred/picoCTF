@@ -1,4 +1,4 @@
-# Takes a cipher that has a known and unknown message and extracts the unknown message.
+# Takes the oracle's decrypted plaintext value (mt) as an integer and extracts the unknown message.
 # Use the mixed_encrypter script to create the mixed cipher for the oracle then use this script
 # to get the flag.
 

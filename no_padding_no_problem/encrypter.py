@@ -1,4 +1,4 @@
-# Encrypts a message using RSA.  Copy the n and e form the oracle, run the
+# Encrypts a message using RSA.  Copy the n and e from the oracle, run the
 # script and then paste the output into the oracle to get the original message back.
 
 from Crypto.Util.number import bytes_to_long
